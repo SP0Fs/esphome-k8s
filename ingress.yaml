@@ -15,10 +15,10 @@ spec:
   ingressClassName: nginx
   tls:
     - hosts:
-      - esp.leibold.tech
+      - esp.spof.tech
       secretName: esp-certs
   rules:
-    - host: esp.leibold.tech
+    - host: esp.spof.tech
       http:
         paths:
           - pathType: Prefix
