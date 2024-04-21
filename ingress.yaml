@@ -15,7 +15,8 @@ spec:
   ingressClassName: nginx
   tls:
     - hosts:
-      - esp.spof.tech
+        - esp.spof.tech
+        - esp.leibold.tech
       secretName: esp-certs
   rules:
     - host: esp.spof.tech
