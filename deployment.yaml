@@ -32,10 +32,10 @@ spec:
           env:
             - name: TZ
               value: "Europe/Berlin"
-          volumeMounts:
-            - mountPath: /config
-              name: config
-      volumes:
-        - name: config
-          persistentVolumeClaim:
-            claimName: esphome-pvc
+          # volumeMounts:
+          #   - mountPath: /config
+          #     name: config
+      # volumes:
+      #   - name: config
+      #     persistentVolumeClaim:
+      #       claimName: esphome-pvc
