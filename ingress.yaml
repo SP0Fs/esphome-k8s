@@ -15,20 +15,20 @@ spec:
   ingressClassName: nginx
   tls:
     - hosts:
-        - esp.spof.tech
+        # - esp.spof.tech
         - esp.leibold.tech
       secretName: esp-certs
   rules:
-    - host: esp.spof.tech
-      http:
-        paths:
-          - pathType: Prefix
-            path: /
-            backend:
-              service:
-                name: esphome
-                port:
-                  number: 6052
+    # - host: esp.spof.tech
+    #   http:
+    #     paths:
+    #       - pathType: Prefix
+    #         path: /
+    #         backend:
+    #           service:
+    #             name: esphome
+    #             port:
+    #               number: 6052
     - host: esp.leibold.tech
       http:
         paths:
